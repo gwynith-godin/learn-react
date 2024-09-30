@@ -1,1 +1,15 @@
-function MyComp() {}
+export default function MyComp() {
+    return(
+        <div>
+            <h1>
+                My first component
+            </h1>
+            <ol>
+                <li> Components: UI building block </li>
+                <li> Defining a Component </li>
+                <li> Using a component </li>
+            </ol>
+        </div>
+    )
+
+}

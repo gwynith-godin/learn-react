@@ -2,8 +2,12 @@ import { useState } from 'react';
 import { sculptureList } from '../../data/data';
 
 export default function Gallery() {
+  // this component has a state that is an obejct 
+  // with a property index
+  // hook state - can only be changed from setIndex
   const [index, setIndex] = useState(0);
 
+  // update the state
   function handleClick() {
     setIndex(index + 1);
   }

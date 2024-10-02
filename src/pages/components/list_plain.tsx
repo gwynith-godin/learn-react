@@ -7,6 +7,7 @@ const people = [
 ];
 
 export default function List() {
+  // map - takes an element in a list or array and transforms it
   const listItems = people.map(person =>
     <li>{person}</li>
   );

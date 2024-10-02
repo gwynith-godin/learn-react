@@ -7,6 +7,9 @@ const people = [
 ];
 
 export default function List() {
+
+  // provide a key prop
+  // index is not ideal for a key -- this is just an illustration
   const listItems = people.map((person, index) =>
     <li key={index}>{person}</li>
   );

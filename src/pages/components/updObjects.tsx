@@ -11,7 +11,15 @@ export default function Form() {
   });
 
   function handleCityChange(e: { target: { value: string; }; }) {
+
+    // this is the correct way to update an object -- using spread syntax (...)
+    // which is a shallow copy
+    // ... means to copy what was in the last object, 
+    // except for the city property in this case
     const nextArtwork = { ...person.artwork, city: e.target.value };
+    
+    // ... means to copy what was in the last object, 
+    // except for the artwork property in this case
     const nextPerson = { ...person, artwork: nextArtwork };
     setPerson(nextPerson);
   }

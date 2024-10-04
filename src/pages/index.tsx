@@ -14,8 +14,6 @@
 // import Counter from './components/snapshot'
 // import Snapshot2 from './components/snapshot2'
 
-
-
 import ProfileMistake from './qcomps/profile_mistake'
 import MyComp from './qcomps/firstcomp'
 import Bio from './qcomps/bios'
@@ -28,12 +26,18 @@ import State from './qcomps/state'
 import StuckForm from './qcomps/stuckForm'
 import ThankyouForm from './qcomps/thankYouCrash'
 
+import RequestTracker from './qcomps/shoppingCart';
+import UpdObjects from './qcomps/updObjectsForm'
+import ArrList from './components/artistsArr';
+import List from './qcomps/artistsRemoveArr';
+import BucketList from './qcomps/arrObj';
+
 /**
  * Replace the return value to display the function you want.
  * @returns a function
  */
 export default function Home() {
   return (
-    <ListKeysId />
+    <ThankyouForm />
   )
 }

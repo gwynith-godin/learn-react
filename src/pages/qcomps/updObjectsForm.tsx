@@ -8,6 +8,12 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
+    setPlayer({
+      ...player,
+      likescore: player.likescore + 1,
+    });
+
+
     player.likescore++;
   }
 
@@ -19,7 +25,12 @@ export default function Scoreboard() {
   }
 
   function handleLastNameChange(e: { target: { value: string; }; }) {
-    player.lastName = e.target.value;
+    setPlayer({
+      ...player,
+      lastName: e.target.value,
+    });
+    
+    // player.lastName = e.target.value;
   }
 
   return (

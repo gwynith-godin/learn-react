@@ -12,7 +12,6 @@ export default function Gallery() {
     else{
       setIndex(0);
     }
-    
   }
 
   function handleMoreClick() {

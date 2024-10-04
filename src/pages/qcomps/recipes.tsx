@@ -28,12 +28,8 @@ function IngredientList({ ingredients }: { ingredients: Array<string> }) {
 function RecipeDiv({ name, ingredients }: { name: string, ingredients: Array<string> }) {
   return (
     <div>
-      <h2>
-        {name}
-      </h2>
-      <div>
-        <IngredientList ingredients={ingredients} />
-      </div>
+      <h2>{name}</h2>
+      <div><IngredientList ingredients={ingredients} /></div>
     </div>
   )
 }

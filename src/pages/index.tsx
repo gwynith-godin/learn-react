@@ -29,7 +29,7 @@ import ThankyouForm from './qcomps/thankYouCrash'
 import RequestTracker from './qcomps/shoppingCart';
 import UpdObjects from './qcomps/updObjectsForm'
 import ArrList from './components/artistsArr';
-import List from './qcomps/artistsRemoveArr';
+import RemoveArrList from './qcomps/artistsRemoveArr';
 import BucketList from './qcomps/arrObj';
 
 /**
@@ -38,6 +38,6 @@ import BucketList from './qcomps/arrObj';
  */
 export default function Home() {
   return (
-    <ThankyouForm />
+    <RemoveArrList />
   )
 }
